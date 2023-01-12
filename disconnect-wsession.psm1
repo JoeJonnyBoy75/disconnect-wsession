@@ -16,7 +16,7 @@ function disconnect-wsession ($computer, $username) {
 							rwinsta /server:$computer $result.id
 			}
 		}
-	} 
+	} else {echo 'Host Not Available'}
 }
 
 function get-wsessions($computer) {
